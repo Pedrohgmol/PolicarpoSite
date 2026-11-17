@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Triste Fim de Policarpo Quaresma</title>
+<style>
+:root{--bg:#f3efe2;--ink:#1d2a1f;--green:#1f5a3a;--yellow:#e3b820;--blue:#23407a;--card:#fbf9f0;--line:#c9c2a8;--muted:#555c4f;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141b15;--ink:#ece8d6;--green:#5bb987;--yellow:#e8c44a;--blue:#8aa7e0;--card:#1c261e;--line:#34413a;--muted:#a9b0a0;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141b15;--ink:#ece8d6;--green:#5bb987;--yellow:#e8c44a;--blue:#8aa7e0;--card:#1c261e;--line:#34413a;--muted:#a9b0a0;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.65 Georgia,"Iowan Old Style",serif}
+header{padding:40px 22px 44px;color:#f6f1dc;background:linear-gradient(90deg,#e3b820 0 33%,#23407a 33% 66%,#f6f1dc 66%) bottom/100% 6px no-repeat,#1f5a3a}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.emb{width:72px;height:46px;background:#e3b820;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);display:grid;place-items:center}
+.emb i{width:22px;height:22px;border-radius:50%;background:#23407a;box-shadow:0 0 0 2px #f6f1dc inset}
+.epi{font:14px/1.5 system-ui,sans-serif;color:#e3b820;margin:18px 0 0;border-top:1px dashed #f6f1dc55;padding-top:12px}
+.wrap{max-width:720px;margin:0 auto}
+h1{font:700 clamp(2.2rem,9vw,4rem)/1.05 Georgia,serif;margin:0 0 14px;letter-spacing:-.02em}
+.sub{color:#e6dfc3;font-style:italic;margin:0}
+section{padding:40px 22px 8px}
+h2{font-size:1.7rem;margin:0 0 8px}
+p{margin:0 0 14px}
+.leg{font:14px system-ui,sans-serif;color:var(--muted)}
+.leg i{display:inline-block;width:12px;height:12px;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);margin:0 5px 0 12px;vertical-align:-1px}
+#tl h2::before{content:"";display:inline-block;width:16px;height:16px;background:var(--yellow);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);margin-right:10px;vertical-align:-1px}
+.tn{display:flex;overflow-x:auto;padding:14px 0 8px;scroll-snap-type:x proximity}
+.nd{flex:0 0 78px;position:relative;background:none;border:0;padding:0 0 4px;cursor:pointer;color:var(--muted);font:12px system-ui,sans-serif;scroll-snap-align:center}
+.nd::before{content:"";position:absolute;left:0;right:0;top:13px;height:3px;background:var(--line)}
+.dm{display:block;position:relative;width:28px;height:28px;margin:0 auto 6px;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:var(--green)}
+.nd[data-t=h] .dm{background:var(--blue)}
+.nd.on .dm{background:var(--yellow)}
+.nd.on .dm::after{content:"";position:absolute;inset:9px;border-radius:50%;background:var(--blue)}
+.nd.on{color:var(--ink);font-weight:700}
+.nd:focus-visible{outline:3px solid var(--blue)}
+.tc{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--green);padding:20px;margin-top:8px;min-height:250px;animation:fd .35s}
+.tc.h{border-top-color:var(--blue)}
+.tc .tag{font:700 13px system-ui,sans-serif;color:var(--green)}
+.tc.h .tag{color:var(--blue)}
+.tc h3{font-size:1.45rem;line-height:1.2;margin:4px 0 12px}
+.tc .fact{font-size:16px;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px;margin:14px 0 0}
+.tb{display:flex;justify-content:space-between;margin-top:6px}
+button.n:disabled{opacity:.4;cursor:default}
+@keyframes fd{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.tc{animation:none}html{scroll-behavior:auto}}
+.card{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--green);padding:18px}
+#qq{font-weight:700;margin:12px 0 14px}
+.prog{font:14px system-ui,sans-serif;color:var(--muted)}
+.bar{height:6px;background:var(--line);border-radius:3px;margin:6px 0 0}
+.bar div{height:100%;background:var(--green);border-radius:3px;transition:width .3s}
+button.q{font:600 16px system-ui,sans-serif;display:block;width:100%;text-align:left;background:var(--bg);color:var(--ink);border:1px solid var(--line);padding:12px 14px;margin:0 0 8px;cursor:pointer;border-radius:4px}
+button.q:focus-visible,button.n:focus-visible{outline:3px solid var(--blue)}
+button.q.ok{border-color:var(--green);background:var(--green);color:#fff}
+button.q.no{border-color:#b3412f;background:#b3412f;color:#fff}
+#fb{font-size:16px;margin:10px 0 0;min-height:1.5em}
+button.n{font:700 16px system-ui,sans-serif;background:var(--blue);color:#fff;border:0;padding:12px 20px;border-radius:4px;margin-top:10px;cursor:pointer}
+.hide{display:none}
+.big{font:700 3rem/1 Georgia,serif;color:var(--green)}
+footer{padding:36px 22px 48px;color:var(--muted);font:14px system-ui,sans-serif}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="top"><div class="emb" aria-hidden="true"><i></i></div><svg width="44" height="64" viewBox="0 0 44 64" aria-hidden="true" fill="#e3b820"><rect x="19" y="0" width="6" height="26"/><path d="M22 24c-9 0-12 5-8 10-5 4-8 9-8 14 0 9 7 14 16 14s16-5 16-14c0-5-3-10-8-14 4-5 1-10-8-10z"/><circle cx="22" cy="46" r="5" fill="#1f5a3a"/></svg></div>
+<h1>Triste Fim de Policarpo Quaresma</h1>
+<p class="sub">Lima Barreto, 1911. A história do major que quis salvar o Brasil, contada em linha do tempo, com quiz no final.</p>
+<p class="epi">Pindorama, "terra das palmeiras" em tupi, era um dos nomes do Brasil que Policarpo tanto queria valorizar.</p>
+</div></header>
+<main class="wrap">
+<section id="tl"><h2>Linha do tempo</h2>
+<p class="leg">Toque nos marcos ou use os botões.<i style="background:var(--green)"></i>Na história<i style="background:var(--blue)"></i>Contexto histórico</p>
+<div class="tn" id="tn" role="tablist"></div>
+<article class="tc" id="tc" aria-live="polite"></article>
+<div class="tb"><button class="n" id="pv">Anterior</button><button class="n" id="nt">Próximo</button></div>
+</section>
+<section class="hide" aria-hidden="true"><h2>Resumo</h2>
+<p class="leg"><i style="background:var(--green)"></i>Na história<i style="background:var(--yellow)"></i>No contexto histórico</p>
+<div class="tl">
+<div class="ev h"><b>1889</b><p>Proclamação da República. Começa a República Velha, instável e dominada por militares e oligarquias.</p></div>
+<div class="ev"><b>Parte I: o sonhador</b><p>Policarpo Quaresma, subsecretário do Arsenal de Guerra, vive entre livros sobre o Brasil. Toma aulas de violão com Ricardo Coração dos Outros e se aproxima da afilhada Olga.</p></div>
+<div class="ev"><b>O requerimento em tupi</b><p>Convencido de que o tupi deve ser a língua oficial, ele pede isso ao Congresso. Por engano, escreve até um ofício em tupi, vira motivo de riso e é internado em um hospício.</p></div>
+<div class="ev"><b>Parte II: o sítio</b><p>Ao sair, muda-se para "O Sossego" para provar que a terra brasileira é fértil. Enfrenta formigas, impostos, falta de apoio e a politicagem local. A plantação fracassa.</p></div>
+<div class="ev h"><b>1893–1894</b><p>Revolta da Armada contra o presidente Floriano Peixoto, o "Marechal de Ferro".</p></div>
+<div class="ev"><b>Parte III: a guerra</b><p>Policarpo corre ao Rio para apoiar Floriano e se alista. Vê a violência contra os prisioneiros e escreve ao presidente protestando.</p></div>
+<div class="ev"><b>O fim</b><p>A carta lhe custa a prisão. Desiludido com o governo que admirava, ele é condenado e executado, num desfecho que sela a falência do seu sonho patriótico.</p></div>
+<div class="ev h"><b>1911</b><p>O romance sai em folhetim no Jornal do Commercio. Em livro, em 1915. Marco do Pré-Modernismo.</p></div>
+</div></section>
+
+<section id="quiz"><h2>Quiz final</h2>
+<p>15 perguntas sobre o livro, o contexto histórico e a escola literária.</p>
+<div class="card">
+<div id="game">
+<div class="prog"><span id="pg"></span><div class="bar"><div id="bar"></div></div></div>
+<p id="qq"></p><div id="opts"></div><p id="fb" aria-live="polite"></p>
+<button class="n hide" id="nx">Próxima</button>
+</div>
+<div id="end" class="hide"><div class="big" id="sc"></div><p id="msg"></p><button class="n" id="again">Refazer o quiz</button></div>
+</div></section>
+</main>
+<footer><div class="wrap">Obra em domínio público. Site educativo.</div></footer>
+<script>
+var Q=[
+["Quem é o autor do romance?",["Machado de Assis","Lima Barreto","Graciliano Ramos","Euclides da Cunha"],1,"Afonso Henriques de Lima Barreto, escritor carioca."],
+["A que escola literária o livro costuma ser associado?",["Romantismo","Parnasianismo","Pré-Modernismo","Modernismo de 1930"],2,"O Pré-Modernismo (1902–1922) antecede a Semana de 22."],
+["Em que ano o romance foi publicado em folhetim?",["1889","1911","1922","1930"],1,"Saiu em 1911 no Jornal do Commercio; em livro, em 1915."],
+["Qual o cargo de Policarpo?",["Juiz","Professor","Subsecretário do Arsenal de Guerra","Deputado"],2,"Ele é funcionário público metódico."],
+["Qual língua Policarpo defende como oficial?",["Tupi","Francês","Guarani","Latim"],0,"Para ele, o tupi seria a verdadeira língua nacional."],
+["O que acontece com ele após o episódio do ofício em tupi?",["É promovido","É demitido e exilado","É internado em um hospício","Vira ministro"],2,"Foi tomado por louco."],
+["Como se chama o sítio de Policarpo?",["Boa Vista","Recanto","Sossego","Esperança"],2,"\"O Sossego\", onde tenta provar a fertilidade da terra."],
+["Que problema prejudica a lavoura do sítio?",["Enchentes","Formigas saúvas","Geadas","Incêndios"],1,"Além das formigas, os impostos e a politicagem."],
+["Que instrumento Ricardo Coração dos Outros defende como nacional?",["Violão","Piano","Violino","Harpa"],0,"Ele defende o violão e a modinha."],
+["Qual revolta serve de pano de fundo da Parte III?",["Canudos","Revolta da Armada","Revolta da Vacina","Contestado"],1,"Ocorreu em 1893–1894."],
+["Que presidente Policarpo admira e apoia?",["Deodoro da Fonseca","Prudente de Morais","Floriano Peixoto","Campos Sales"],2,"Floriano era conhecido como \"Marechal de Ferro\"."],
+["O livro se passa em que período histórico?",["Império","República Velha","Era Vargas","Ditadura Militar"],1,"Os primeiros anos da República, a partir de 1889."],
+["Qual é uma marca do Pré-Modernismo presente na obra?",["Idealização do herói","Denúncia social e crítica à realidade","Fuga para o passado medieval","Formalismo parnasiano"],1,"Os pré-modernistas retratam e criticam o Brasil real."],
+["Qual é a crítica central do livro?",["Ao nacionalismo ingênuo e ao poder","Aos imigrantes","À vida no campo","À educação religiosa"],0,"O livro mostra como o patriotismo idealizado se choca com a realidade."],
+["Qual o desfecho de Policarpo?",["Torna-se fazendeiro rico","Vira presidente","Muda-se para a Europa","É preso e executado"],3,"O título já anuncia o \"triste fim\"."]
+],i=0,s=0,$=function(x){return document.getElementById(x)};
+function show(){
+var q=Q[i],o=$("opts");
+$("pg").textContent="Pergunta "+(i+1)+" de "+Q.length;$("bar").style.width=(i/Q.length*100)+"%";
+$("qq").textContent=q[0];$("fb").textContent="";$("nx").classList.add("hide");o.innerHTML="";
+q[1].forEach(function(t,k){var b=document.createElement("button");b.className="q";b.textContent=t;
+b.onclick=function(){
+var bs=o.children;for(var j=0;j<bs.length;j++){bs[j].disabled=true}
+if(k===q[2]){s++;b.classList.add("ok");$("fb").textContent="Correto! "+q[3]}
+else{b.classList.add("no");bs[q[2]].classList.add("ok");$("fb").textContent="Resposta certa: "+q[1][q[2]]+". "+q[3]}
+$("nx").textContent=i<Q.length-1?"Próxima":"Ver resultado";$("nx").classList.remove("hide")};
+o.appendChild(b)})}
+$("nx").onclick=function(){i++;if(i<Q.length){show()}else{
+$("game").classList.add("hide");$("end").classList.remove("hide");
+$("sc").textContent=s+" / "+Q.length;
+$("msg").textContent=s>=13?"Excelente! Você conhece bem o Quaresma.":s>=8?"Muito bom! Revise a linha do tempo e tente de novo.":"Vale reler a linha do tempo e tentar novamente."}};
+$("again").onclick=function(){i=0;s=0;$("end").classList.add("hide");$("game").classList.remove("hide");show()};
+show();
+var E=[
+{t:"h",l:"1889",d:"15 de novembro de 1889",h:"Nasce a República",x:"A monarquia cai e o Brasil passa a ser uma república. Os primeiros anos são de instabilidade, com militares e oligarquias disputando o poder.",f:"É o pano de fundo de todo o romance."},
+{t:"s",l:"Parte I",d:"Rio de Janeiro",h:"O patriota de gabinete",x:"Policarpo Quaresma, subsecretário do Arsenal de Guerra, vive entre livros e mapas. Metódico e solitário, dedica as horas vagas a conhecer e exaltar o Brasil.",f:"Ele é conhecido como \"major\", embora nunca tenha ido à guerra."},
+{t:"s",l:"Violão",d:"Parte I",h:"Violão e modinha",x:"Para entender a alma nacional, Policarpo aprende violão com Ricardo Coração dos Outros, seresteiro que defende a modinha como música verdadeiramente brasileira. Também se aproxima da afilhada Olga.",f:"No começo do século XX, o violão era visto com preconceito pela elite."},
+{t:"s",l:"Tupi",d:"Parte I",h:"O requerimento em tupi",x:"Policarpo pede ao Congresso que o tupi seja a língua oficial. Por distração, redige um ofício inteiro em tupi, vira motivo de riso e acaba internado em um hospício.",f:"O Diretório dos Índios (1758) já havia imposto o português no lugar da língua geral."},
+{t:"s",l:"Sossego",d:"Parte II",h:"O sítio O Sossego",x:"Ao sair do hospício, muda-se para o campo para provar que a terra brasileira é fértil. Enfrenta formigas, impostos, politicagem e falta de apoio. A plantação fracassa.",f:"Frase atribuída ao naturalista Saint-Hilaire: ou o Brasil acaba com a saúva, ou a saúva acaba com o Brasil."},
+{t:"h",l:"1893",d:"1893–1894",h:"Revolta da Armada",x:"Parte da Marinha se rebela contra o presidente Floriano Peixoto, o \"Marechal de Ferro\". O governo reage com dureza, e o Rio vira cenário de guerra.",f:"Floriano assumiu em 1891 e é visto como defensor da República."},
+{t:"s",l:"Parte III",d:"Rio em guerra",h:"Policarpo vai à guerra",x:"Ao saber da revolta, Policarpo corre ao Rio e se alista para apoiar Floriano, a quem admira. Lá, encontra violência contra prisioneiros e começa a perceber a realidade.",f:"É o ponto em que o idealismo dele se choca com a política real."},
+{t:"s",l:"O fim",d:"Desfecho",h:"A carta e o triste fim",x:"Policarpo escreve ao presidente protestando contra os maus-tratos. Isso lhe custa a prisão. Desiludido, é condenado e executado, e seu sonho de um Brasil ideal termina com ele.",f:"O título já anuncia o desfecho: o drama está em como ele chega lá."},
+{t:"h",l:"1911",d:"1911 e 1915",h:"Lima Barreto publica o romance",x:"A obra sai em folhetim no Jornal do Commercio em 1911 e em livro em 1915. É um dos marcos do Pré-Modernismo, com crítica social e olhar sobre o Brasil real.",f:"O Pré-Modernismo antecede a Semana de Arte Moderna de 1922."}
+],c=0;
+function tl(k){c=Math.max(0,Math.min(E.length-1,k));var e=E[c],n=$("tn").children;
+for(var j=0;j<n.length;j++){n[j].classList.toggle("on",j===c);n[j].setAttribute("aria-selected",j===c)}
+n[c].scrollIntoView({block:"nearest",inline:"center"});
+var t=$("tc"),f=t.cloneNode(false);f.className="tc"+(e.t==="h"?" h":"");
+f.innerHTML='<div class="tag"></div><h3></h3><p></p><p class="fact"></p>';
+f.children[0].textContent=(e.t==="h"?"Contexto histórico · ":"Na história · ")+e.d;
+f.children[1].textContent=e.h;f.children[2].textContent=e.x;f.children[3].textContent="Você sabia? "+e.f;
+t.parentNode.replaceChild(f,t);
+$("pv").disabled=c===0;$("nt").disabled=c===E.length-1}
+E.forEach(function(e,k){var b=document.createElement("button");b.className="nd";b.setAttribute("data-t",e.t);b.setAttribute("role","tab");
+b.innerHTML='<span class="dm"></span><span></span>';b.children[1].textContent=e.l;b.onclick=function(){tl(k)};$("tn").appendChild(b)});
+$("pv").onclick=function(){tl(c-1)};$("nt").onclick=function(){tl(c+1)};
+$("tn").onkeydown=function(ev){if(ev.key==="ArrowRight"){tl(c+1)}else if(ev.key==="ArrowLeft"){tl(c-1)}};
+tl(0);
+</script>
+</body>
+</html>
